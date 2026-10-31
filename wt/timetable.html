@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            text-align: center;
+            background-color: white;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 99%;
+            margin: 10px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #174f60;
+            color: white;
+        }
+
+        .day {
+            background-color: #8fd8dd;
+            color: #174f60;
+            font-weight: bold;
+        }
+
+        .break {
+            background-color: #f7f436;
+            color: #2623da;
+            font-weight: bold;
+        }
+
+        .lunch {
+            background-color: #30a6f5;
+            color: #174f38;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+        }
+        
+        .elective {
+            color: #f01c1c;
+            font-weight: bold;
+        }
+
+        .lab {
+             background-color: #f879d8;
+            color: #051605;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #65fd57;
+            color: rgb(15, 15, 15);
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bangalore Institute of Technology</h1>
+    <h2>CLASS TIME TABLE</h2>
+    <h3>Computer Science and Engineering - 5th Sem, Section C</h3>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day / Time</th>
+                <th>8:00 - 9:00</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 10:30</th>
+                <th>10:30 - 11:30</th>
+                <th>11:30 - 12:30</th>
+                <th>12:30 - 1:30</th>
+                <th>1:30 - 2:30</th>
+                <th>2:30 - 3:30</th>
+                <th>3:30 - 4:30</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="day">MONDAY</td>
+                <td></td>
+                <td></td>
+                <td class="break" rowspan="5">BREAK</td>
+                <td class="elective">PE</td>
+                <td></td>
+                <td class="elective">RM</td>
+                <td class="elective">AI</td>
+                <td class="elective">TOC</td>
+                <td class="elective">SE</td>
+            </tr>
+
+            <tr>
+                <td class="day">TUESDAY</td>
+                <td colspan="2" class="lab">CNS LAB</td>
+                <td class="elective">SE</td>
+                <td class="elective">CNS</td>
+                <td class="lunch" rowspan="5">LUNCH</td>
+                <td class="elective">TOC</td>
+                <td class="elective">AI</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="day">WEDNESDAY</td>
+                <td></td>
+                <td></td>
+                <td class="elective">EVS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="day">THURSDAY</td>
+                <td class="elective">SE</td>
+                <td class="elective">CNS</td>
+                <td class="elective">TOC</td>
+                <td class="elective">RM</td>
+                <td colspan="2" class="lab">WT LAB</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="day">FRIDAY</td><td class="elective">YOGA</td>
+                <td class="elective">AI</td>
+                <td class="elective">RM</td>
+                <td class="elective">CNS</td>
+                <td class="elective">SE</td>
+                <td class="elective">TOC</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+    <tr>
+        <td colspan="10" class="footer">
+            Department of CSE, BIT
+        </td>
+    </tr>
+</tfoot>
+    </table>
+
+</body>
+</html>
